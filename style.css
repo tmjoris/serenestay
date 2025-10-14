@@ -461,7 +461,8 @@ header .navbar {
         max-width: 250px;
         aspect-ratio: 1;
     }
-  /* === FOOTER STYLING === */
+}
+/* === FOOTER STYLING === */
 .footer {
   background: var(--primary-color);
   color: var(--white-color);
@@ -560,4 +561,3 @@ header .navbar {
   }
 }
 
-}
