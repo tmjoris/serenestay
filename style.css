@@ -405,6 +405,16 @@ header .navbar {
   border: 1px solid var(--medium-gray-color);
 }
 
+.contact-section .right-side .contact-form .form-input:focus {
+  border-color: var(--secondary-color);
+}
+
+.contact-section .right-side .contact-form textarea.form-input {
+  height: 100px;
+  padding: 12px;
+  resize: vertical;
+}
+
 .button input[type="submit"] {
   background: var(--primary-color);
   color: #fff;
