@@ -1,0 +1,78 @@
+/* --- Testimonials section styling --- */
+
+#testimonials {
+    /* Padding and background for visual separation */
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4fcf4; /* A light, serene background color */
+}
+
+#testimonials h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #38761d; /* A strong green for "SereneStay" */
+    font-weight: 600;
+}
+
+.testimonial-container {
+    /* Flexbox for a responsive card layout */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px; /* Space between the cards */
+    max-width: 1400px; /* Max width to contain the section */
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    /* Basis for a three-column layout (approx 33% minus gap) */
+    flex: 1 1 calc(33.333% - 30px); 
+    min-width: 280px; /* Ensures cards don't get too small */
+    
+    background-color: #ffffff;
+    border: 1px solid #c9e6c9; /* Light border matching the theme */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+    
+    /* Internal text alignment */
+    text-align: left;
+    height: auto; /* Allow height to adjust to content */
+}
+
+.testimonial-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-card .author {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #38761d; /* Author name in theme color */
+    text-align: right;
+    margin-top: 15px;
+    display: block; /* Make sure the author is on its own line */
+}
+
+/* --- Responsive adjustment: Two columns for mid-size screens --- */
+@media (max-width: 1024px) {
+    .testimonial-card {
+        /* Change to a two-column layout */
+        flex: 1 1 calc(50% - 30px); 
+    }
+}
+
+/* --- Responsive adjustment: Single column for small screens --- */
+@media (max-width: 600px) {
+    .testimonial-card {
+        /* Change to a single-column layout */
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+    #testimonials h2 {
+        font-size: 1.8em;
+    }
+}
