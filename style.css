@@ -700,7 +700,7 @@ header .navbar {
 .testimonial-card .author {
     font-size: 0.9em;
     font-weight: bold;
-    color: #38761d; /* Author name in theme color */
+    color: var(--secondary-color);
     text-align: right;
     margin-top: 15px;
     display: block; /* Make sure the author is on its own line */
